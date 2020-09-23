@@ -15,11 +15,6 @@ class MyImageView : androidx.appcompat.widget.AppCompatImageView {
 
     }
 
-    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-        val mode = MeasureSpec.getMode(widthMeasureSpec)
-    }
-
     override fun onDraw(canvas: Canvas?) {
         val paint = Paint().apply {
             color = 0xffffffff.toInt()
